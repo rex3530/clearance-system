@@ -118,7 +118,9 @@ foreach ($rows as $r) {
         <div class="alert alert-success" role="alert">Request deleted.</div>
       <?php endif; ?>
       <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-3">
-        <h5 class="mb-0">All Clearance Requests</h5>
+        <div class="d-flex align-items-center gap-2">
+          <h5 class="mb-0">All Clearance Requests</h5>
+        </div>
         <form class="d-flex gap-2" method="get">
           <select name="office_id" class="form-select form-select-sm" onchange="this.form.submit()">
             <option value="0" <?php echo $officeId===0?'selected':''; ?>>All Offices</option>
